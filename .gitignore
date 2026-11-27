@@ -1,0 +1,29 @@
+node_modules
+.next
+out
+build
+coverage
+*.tsbuildinfo
+next-env.d.ts
+
+# secrets – never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+service-account*.json
+credentials*.json
+.clasp.json
+.clasprc.json
+
+# local data / backups
+*.sqlite
+*.db
+*.bak
+naya-backup-*.json
+
+# logs / OS
+*.log
+.DS_Store
+Thumbs.db

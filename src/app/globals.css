@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  font-family: system-ui, "Noto Sans Sinhala", "Iskoola Pota", "Nirmala UI", "Segoe UI", Roboto, sans-serif;
+  background: #f1f5f2;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+@media print {
+  @page {
+    margin: 6mm;
+  }
+  .no-print {
+    display: none !important;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+  .print-area {
+    position: static !important;
+    inset: auto !important;
+    background: #fff !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    backdrop-filter: none !important;
+  }
+  .print-card {
+    box-shadow: none !important;
+  }
+}
